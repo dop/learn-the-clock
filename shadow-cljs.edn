@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[cider/cider-nrepl "0.49.0"]
+  [cljsjs/react "18.2.0-1"]
+  [cljsjs/react-dom "18.2.0-1"]
+  [reagent "1.2.0"]
+  [re-frame "1.4.3"]]
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:frontend {:target :browser
+             :modules {:main {:init-fn learnclock.frontend.app/run}}}}}

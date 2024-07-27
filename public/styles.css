@@ -1,0 +1,45 @@
+.clock-number {
+  font-size: x-small;
+  pointer-events: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+svg text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.clock-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.clock-input svg {
+  align-self: center;
+}
+
+.clock-hand {
+  cursor: grab;
+}
+
+.time-input {
+  display: flex;
+  font-size: x-large;
+  justify-content: center;
+}
+.time-input input {
+  font-size: x-large;
+  width: 2em;
+  text-align: center;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #e0e0e0;
+}
+.time-input input:disabled {
+  color: grey;
+}
